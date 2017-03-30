@@ -1,0 +1,130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		3BA11C7E1A1E2965001DF3B3 /* config.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.m4; sourceTree = "<group>"; };
+		3BA11C7F1A1E2965001DF3B3 /* config.w32 */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.w32; sourceTree = "<group>"; };
+		3BA11C801A1E2965001DF3B3 /* CREDITS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CREDITS; sourceTree = "<group>"; };
+		3BA11C811A1E2965001DF3B3 /* EXPERIMENTAL */ = {isa = PBXFileReference; lastKnownFileType = text; path = EXPERIMENTAL; sourceTree = "<group>"; };
+		3BA11C821A1E2965001DF3B3 /* handlersocketi_class.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = handlersocketi_class.c; sourceTree = "<group>"; };
+		3BA11C831A1E2965001DF3B3 /* handlersocketi_class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = handlersocketi_class.h; sourceTree = "<group>"; };
+		3BA11C841A1E2965001DF3B3 /* handlersocketi_exception.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = handlersocketi_exception.c; sourceTree = "<group>"; };
+		3BA11C851A1E2965001DF3B3 /* handlersocketi_exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = handlersocketi_exception.h; sourceTree = "<group>"; };
+		3BA11C861A1E2965001DF3B3 /* handlersocketi_index.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = handlersocketi_index.c; sourceTree = "<group>"; };
+		3BA11C871A1E2965001DF3B3 /* handlersocketi_index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = handlersocketi_index.h; sourceTree = "<group>"; };
+		3BA11C881A1E2965001DF3B3 /* handlersocketi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = handlersocketi.c; sourceTree = "<group>"; };
+		3BA11C891A1E2965001DF3B3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3BA11C8A1A1E2965001DF3B3 /* php_handlersocketi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = php_handlersocketi.h; sourceTree = "<group>"; };
+		3BA11C8B1A1E2965001DF3B3 /* php_verdep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = php_verdep.h; sourceTree = "<group>"; };
+		3BA11C8C1A1E2965001DF3B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BA11C8D1A1E2965001DF3B3 /* SimpleSQLWhere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleSQLWhere.cpp; sourceTree = "<group>"; };
+		3BA11C8E1A1E2965001DF3B3 /* SimpleSQLWhere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleSQLWhere.h; sourceTree = "<group>"; };
+		3BA11C8F1A1E2965001DF3B3 /* SimpleSQLWhereTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleSQLWhereTest.cpp; sourceTree = "<group>"; };
+		3BA11C901A1E2965001DF3B3 /* test.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = test.php; sourceTree = "<group>"; };
+		3BA11C911A1E2965001DF3B3 /* testMakeFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = testMakeFile; sourceTree = "<group>"; };
+		3BA11C931A1E2965001DF3B3 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		3BA11C941A1E2965001DF3B3 /* protocol.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = protocol.txt; sourceTree = "<group>"; };
+		3BA11C951A1E2965001DF3B3 /* request.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = request.c; sourceTree = "<group>"; };
+		3BA11C961A1E2965001DF3B3 /* request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = request.h; sourceTree = "<group>"; };
+		3BA11C971A1E2965001DF3B3 /* response.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = response.c; sourceTree = "<group>"; };
+		3BA11C981A1E2965001DF3B3 /* response.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = response.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3BA11BC91A1E28B2001DF3B3 = {
+			isa = PBXGroup;
+			children = (
+				3BA11C7E1A1E2965001DF3B3 /* config.m4 */,
+				3BA11C7F1A1E2965001DF3B3 /* config.w32 */,
+				3BA11C801A1E2965001DF3B3 /* CREDITS */,
+				3BA11C811A1E2965001DF3B3 /* EXPERIMENTAL */,
+				3BA11C821A1E2965001DF3B3 /* handlersocketi_class.c */,
+				3BA11C831A1E2965001DF3B3 /* handlersocketi_class.h */,
+				3BA11C841A1E2965001DF3B3 /* handlersocketi_exception.c */,
+				3BA11C851A1E2965001DF3B3 /* handlersocketi_exception.h */,
+				3BA11C861A1E2965001DF3B3 /* handlersocketi_index.c */,
+				3BA11C871A1E2965001DF3B3 /* handlersocketi_index.h */,
+				3BA11C881A1E2965001DF3B3 /* handlersocketi.c */,
+				3BA11C891A1E2965001DF3B3 /* LICENSE */,
+				3BA11C8A1A1E2965001DF3B3 /* php_handlersocketi.h */,
+				3BA11C8B1A1E2965001DF3B3 /* php_verdep.h */,
+				3BA11C8C1A1E2965001DF3B3 /* README.md */,
+				3BA11C8D1A1E2965001DF3B3 /* SimpleSQLWhere.cpp */,
+				3BA11C8E1A1E2965001DF3B3 /* SimpleSQLWhere.h */,
+				3BA11C8F1A1E2965001DF3B3 /* SimpleSQLWhereTest.cpp */,
+				3BA11C901A1E2965001DF3B3 /* test.php */,
+				3BA11C911A1E2965001DF3B3 /* testMakeFile */,
+				3BA11C921A1E2965001DF3B3 /* util */,
+			);
+			sourceTree = "<group>";
+		};
+		3BA11C921A1E2965001DF3B3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				3BA11C931A1E2965001DF3B3 /* common.h */,
+				3BA11C941A1E2965001DF3B3 /* protocol.txt */,
+				3BA11C951A1E2965001DF3B3 /* request.c */,
+				3BA11C961A1E2965001DF3B3 /* request.h */,
+				3BA11C971A1E2965001DF3B3 /* response.c */,
+				3BA11C981A1E2965001DF3B3 /* response.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		3BA11BCA1A1E28B2001DF3B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 3BA11BCD1A1E28B2001DF3B3 /* Build configuration list for PBXProject "handlersocketi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3BA11BC91A1E28B2001DF3B3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		3BA11BCE1A1E28B2001DF3B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BA11BCF1A1E28B2001DF3B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BA11BCD1A1E28B2001DF3B3 /* Build configuration list for PBXProject "handlersocketi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA11BCE1A1E28B2001DF3B3 /* Debug */,
+				3BA11BCF1A1E28B2001DF3B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BA11BCA1A1E28B2001DF3B3 /* Project object */;
+}

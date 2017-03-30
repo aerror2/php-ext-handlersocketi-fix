@@ -1,0 +1,25 @@
+test:clean sw
+	time ./sw " _b <= 1 AND  c IN ( 1, 2 , 3 ) "
+	time ./sw " _b <= '1' AND  c IN ( 1, 2 , '3' ) "
+	time ./sw "\`_b\`<= '1' AND  c IN ( 1, 2 , '3' ) "
+	time ./sw "\`_b\` in (1.1) "
+	time ./sw "\`_b\`  = 1.1 "
+	time ./sw "\`_b\`  = -1.1 "
+	time ./sw "\`_b\`  = 0X1000 "
+	time ./sw "\`_b\`  = '1,1' "
+	time ./sw "\`_b\` in ('1','\\'xxdfs') AND   c IN ( 1, 2 , '3' )"
+	time ./sw "\`_b\` in (2.1,'\\'xxdfs') AND   c IN ( 1, 2 , '3' )"
+	time ./sw "\`_b\` in (2.1,'\\'xxdfs') AND   c IN ( 1, 2 , '3' ) AND d=3 and ef > 4"
+	time ./sw "\`_b\` in (2.1,'\\'xxdfs') AND   c IN ( 1, 2 , '3' ) AND d=3 and ef > 4 limit 1"
+	time ./sw "\`_b\` in (2.1,'\\'xxdfs') AND   c IN ( 1, 2 , '3' ) AND d=3 and ef > 4 limit 2,1"
+
+sw:SimpleSQLWhere.o 
+	g++  -O2 -o sw SimpleSQLWhere.o 
+
+SimpleSQLWhere.o:SimpleSQLWhere.cpp
+	c++ -I/Users/dany/Codes/boost_1_47_0 -c -o SimpleSQLWhere.o SimpleSQLWhere.cpp
+
+
+clean:
+	rm -f sw SimpleSQLWhere.o 
+

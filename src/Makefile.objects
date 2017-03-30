@@ -1,0 +1,20 @@
+handlersocketi.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi.c -o handlersocketi.lo 
+handlersocketi_exception.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi_exception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi_exception.c -o handlersocketi_exception.lo 
+handlersocketi_class.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi_class.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi_class.c -o handlersocketi_class.lo 
+handlersocketi_index.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi_index.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/handlersocketi_index.c -o handlersocketi_index.lo 
+util/request.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/util/request.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/util/request.c -o util/request.lo 
+util/response.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/util/response.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/util/response.c -o util/response.lo 
+SimpleSQLWhere.lo: /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/SimpleSQLWhere.cpp
+	$(LIBTOOL) --mode=compile $(CXX)  -I. -I/Users/dany/Codes/hero/tools/php-ext-handlersocketi-master $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /Users/dany/Codes/hero/tools/php-ext-handlersocketi-master/SimpleSQLWhere.cpp -o SimpleSQLWhere.lo 
+$(phplibdir)/handlersocketi.la: ./handlersocketi.la
+	$(LIBTOOL) --mode=install cp ./handlersocketi.la $(phplibdir)
+
+./handlersocketi.la: $(shared_objects_handlersocketi) $(HANDLERSOCKETI_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_handlersocketi) $(HANDLERSOCKETI_SHARED_LIBADD)
+
